@@ -18,7 +18,7 @@ FORS =  actors.for ballop.for clockr.for demons.for\
 	np1.for blkdata.for rtim.for $(GDT)
 
 dungeon: $(FORS)
-	g77 $(FFLAGS) -fbackslash $(DLINE) -o dungeon $(FORS)
+	gfortran $(FFLAGS) -fbackslash $(DLINE) -o dungeon $(FORS)
 
 clean:
 	rm -f dungeon
